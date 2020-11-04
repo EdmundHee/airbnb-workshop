@@ -73,15 +73,7 @@ export default {
     [
       "@nuxtjs/firebase",
       {
-        config: {
-          apiKey: "AIzaSyAOuwGw5gLEOq7blocYOejlx26cXVTn0HA",
-          authDomain: "webdevseries2.firebaseapp.com",
-          databaseURL: "https://webdevseries2.firebaseio.com",
-          projectId: "webdevseries2",
-          storageBucket: "webdevseries2.appspot.com",
-          messagingSenderId: "53306314880",
-          appId: "1:53306314880:web:b21220e8ed90c04adbd665"
-        },
+        config: JSON.parse(firebaseConfig),
         services: {
           firestore: true
         }
