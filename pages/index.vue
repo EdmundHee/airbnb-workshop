@@ -1,54 +1,33 @@
 <template>
-  <div class="h-full w-full pb-10">
-    <!-- 
-      Navigation bar
-     -->
-    <Navigation>
-      <template v-slot:widget-1>
-        
-      </template>
-      <template v-slot:widget-2>
-        
-      </template>
-      <template v-slot:widget-3>
-        
-      </template>
-    </Navigation>
-
-    <!-- 
-      Location Name & State 
-     -->
-    <LocationHeader>
-      <template v-slot:name>
-          
-      </template>
-      <template v-slot:location>
-          
-      </template>
-    </LocationHeader>
-    
-    <!-- 
-      Display image of unit
-     -->
-     
-    <DisplayImg>
-        <template v-slot:main>
-        </template>
-        <template v-slot:sub>
-        </template>
-    </DisplayImg>
-
-    <!-- Unit information -->
-    <Content>
-      <template v-slot:content>
-      </template>
-    </Content>
-
-    <!-- Footer -->
+  <div class="bg-grayish-white-1 relative">
+    <!-- Image -->
+    <div class="h-screen w-2/3">
+      <img
+        class="w-full h-full object-cover"
+        src="https://images.pexels.com/photos/331684/pexels-photo-331684.jpeg?cs=srgb&dl=pexels-math-331684.jpg&fm=jpg"
+        alt=""
+      />
+    </div>
+    <!-- Content -->
+    <div class="absolute h-screen w-1/2 top-0 right-0">
+      <div class="flex h-full w-full">
+        <div class="my-auto w-full">
+          <div class="flex flex-col">
+            <div class="text-4xl font-poppins text-gray-800">
+              <span class="font-thin">Welcome to</span>
+              <span class="font-semibold">Normand's page</span>
+              <span class="text-6xl text-lead-yellow">.</span>
+            </div>
+            <div class="font-thin font-sans text-gray-700 text-left -mt-4">
+              Aspiring fullstack developer | Student @ MSU | Hire me pls
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-export default {
-}
+export default {};
 </script>
